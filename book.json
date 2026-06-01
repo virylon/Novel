@@ -5,6 +5,6 @@
   "cover": "",
   "chapters": [
     { "title": "第一章", "file": "chapters/000.md" },
-    { "title": "第二章", "file": "chapters/001.md" },
+    { "title": "第二章", "file": "chapters/001.md" }
   ]
 }
