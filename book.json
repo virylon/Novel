@@ -1,11 +1,10 @@
 {
   "title": "未命名的小说",
-  "author": "佚名",
-  "description": "这里写一句话简介，会显示在侧边栏。",
+  "author": "virylon",
+  "description": "在线连载(或许)...",
   "cover": "",
   "chapters": [
-    { "title": "楔子", "file": "chapters/000.md" },
-    { "title": "第一章 启程", "file": "chapters/001.md" },
-    { "title": "第二章 风雨", "file": "chapters/002.md" }
+    { "title": "第一章", "file": "chapters/000.md" },
+    { "title": "第二章", "file": "chapters/001.md" },
   ]
 }
