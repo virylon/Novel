@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>在线阅读</title>
+  <meta name="description" content="一部连载小说的在线阅读网站。">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;600&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <div class="layout">
+    <!-- 侧边栏：章节目录 -->
+    <aside class="sidebar" id="sidebar">
+      <div class="book-head">
+        <div class="book-kicker">在线连载</div>
+        <div class="book-title" id="book-title">载入中…</div>
+        <div class="book-author" id="book-author"></div>
+        <div class="book-desc" id="book-desc"></div>
+      </div>
+      <div class="toc-label">目　录</div>
+      <nav class="toc" id="toc"></nav>
+    </aside>
+
+    <!-- 主体：站点栏 + 正文 -->
+    <main class="main">
+      <header class="site-header">
+        <button class="tool-btn menu-btn" id="menu-btn">☰</button>
+        <div class="crumb">
+          <span id="crumb-book">小说</span>
+          <span class="sep">/</span>
+          <b id="crumb-chapter">—</b>
+        </div>
+        <div class="header-spacer"></div>
+        <button class="tool-btn" id="font-dec">A−</button>
+        <button class="tool-btn" id="font-inc">A+</button>
+        <button class="tool-btn" id="theme-btn">◐ 浅色</button>
+      </header>
+
+      <div class="content-wrap">
+        <div id="content">
+          <div class="placeholder"><div class="big">📖</div><p>正在打开书页…</p></div>
+        </div>
+        <div class="pager" id="pager"></div>
+      </div>
+    </main>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
+  <script src="assets/reader.js"></script>
+</body>
+</html>
